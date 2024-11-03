@@ -1,0 +1,37 @@
+{
+  "entities": [
+    {
+      "name": "study",
+      "properties": []
+    },
+    {
+      "name": "patient",
+      "properties": []
+    },
+    {
+      "name": "sample",
+      "properties": []
+    },
+    {
+      "name": "visit",
+      "properties": []
+    }
+  ],
+  "relationships": [
+    {
+      "name": "participated_in",
+      "source": "patient",
+      "destination": "study"
+    },
+    {
+      "name": "attended",
+      "source": "patient",
+      "destination": "visit"
+    },
+    {
+      "name": "collected_at",
+      "source": "sample",
+      "destination": "visit"
+    }
+  ]
+}
